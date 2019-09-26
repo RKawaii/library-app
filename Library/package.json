@@ -1,0 +1,24 @@
+{
+  "name": "Library",
+  "version": "1.0.0",
+  "description": "Library Book Management with React & express",
+  "main": "server.js",
+  "scripts": {
+    "install-server": "npm install",
+    "install-client": "npm install --prefix client",
+    "install-all": "concurrently \"npm run install-server\" \"npm run install-client\"",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "keywords": [],
+  "author": "Taza Hardiena AKA RKawaii",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "mongoose": "^5.5.14"
+  }
+}
